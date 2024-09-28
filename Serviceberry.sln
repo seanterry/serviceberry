@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository Settings", "Repo
 		LICENSE = LICENSE
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serviceberry.Proto", "Serviceberry.Proto\Serviceberry.Proto.csproj", "{3C01DC0E-3792-4678-BCE8-2727C3838E98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +21,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C01DC0E-3792-4678-BCE8-2727C3838E98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C01DC0E-3792-4678-BCE8-2727C3838E98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C01DC0E-3792-4678-BCE8-2727C3838E98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C01DC0E-3792-4678-BCE8-2727C3838E98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
