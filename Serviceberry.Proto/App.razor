@@ -1,6 +1,19 @@
-﻿<Router AppAssembly="typeof(Program).Assembly">
-    <Found Context="routeData">
-        <RouteView RouteData="routeData" DefaultLayout="typeof(Components.Layouts.Main.MainLayout)" />
-        <FocusOnNavigate RouteData="routeData" Selector="h1" />
+﻿@using Htmx
+<Router AppAssembly="typeof(Program).Assembly">
+    <Found Context="routeData ">
+        @if ( HttpContext.Request.IsHtmx() )
+        {
+            <RouteView RouteData="routeData" DefaultLayout="typeof(Components.Layouts.Htmx.HtmxLayout)"/>
+        }
+        else
+        {
+            <RouteView RouteData="routeData" DefaultLayout="typeof(Components.Layouts.Main.MainLayout)"/>
+        }
     </Found>
 </Router>
+
+@code
+{
+    [CascadingParameter]
+    public required HttpContext HttpContext { get; init; }
+}
