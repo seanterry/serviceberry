@@ -1,4 +1,4 @@
-using Serviceberry.Proto.Components;
+using Serviceberry.Proto;
 
 var builder = WebApplication.CreateBuilder(args);
 
