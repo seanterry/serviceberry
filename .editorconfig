@@ -64,9 +64,9 @@ dotnet_code_quality_unused_parameters = all:suggestion
 #### C# Coding Conventions ####
 
 # var preferences
-# csharp_style_var_elsewhere = true:silent
-# csharp_style_var_for_built_in_types = true:suggestion
-# csharp_style_var_when_type_is_apparent = true:suggestion
+csharp_style_var_elsewhere = false:suggestion
+csharp_style_var_for_built_in_types = false:suggestion
+csharp_style_var_when_type_is_apparent = false:suggestion
 
 # Expression-bodied members
 csharp_style_expression_bodied_accessors = true:silent
@@ -207,4 +207,4 @@ tab_width = 4
 [*.cs]
 
 # suppress async without await warnings
-dotnet_diagnostic.CS1998.severity = silent
+# dotnet_diagnostic.CS1998.severity = silent
